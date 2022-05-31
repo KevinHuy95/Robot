@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Robot.Interfaces
 {
-    public interface IWorkflow: IBase
+    public interface IWorkflow: INotifyPropertyChanged, IBase
     {
         long current_version { get; set; }
         string queue { get; set; }
