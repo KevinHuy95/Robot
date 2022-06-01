@@ -35,7 +35,11 @@
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Workflow.Activities" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,12 +53,15 @@
     <Compile Include="entity\apiuser.cs" />
     <Compile Include="entity\Rolemember.cs" />
     <Compile Include="IBase.cs" />
+    <Compile Include="IDesigner.cs" />
     <Compile Include="IProject.cs" />
     <Compile Include="IWorkflow.cs" />
+    <Compile Include="IWorkflowInstance.cs" />
     <Compile Include="NotifyChange.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TokenUser.cs" />
     <Compile Include="Workflow.cs" />
+    <Compile Include="WorkflowInstance.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Robot.Interfaces
 {
-    public interface IProject
+    public interface IProject: INotifyPropertyChanged,IBase
     {
         bool IsExpanded { get; set; }
         bool disable_local_caching { get; set; }

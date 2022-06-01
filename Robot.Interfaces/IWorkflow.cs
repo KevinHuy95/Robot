@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace Robot.Interfaces
 {
+    public delegate void idleOrComplete(IWorkflowInstance sender, EventArgs e);
+    public delegate void VisualTrackingHandler(IWorkflowInstance Instance, string ActivityId, string ChildActivityId, string State);
     public interface IWorkflow: INotifyPropertyChanged, IBase
     {
         long current_version { get; set; }
